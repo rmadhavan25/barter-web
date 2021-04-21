@@ -1,0 +1,31 @@
+
+/* product previews / list */
+.product-preview {
+    /* padding: 10px 16px;
+    margin: 20px 0; */
+    border-bottom: 1px solid #6d6868;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .product-preview:hover {
+    box-shadow: 1px 3px 5px rgba(67, 165, 221, 0.89);
+  }
+  .product-preview h2 {
+    font-size: 20px;
+    color: #17647c;
+    margin-bottom: 8px;
+  }
+  .product-preview a{
+    text-decoration: none;
+  }
+
+  .add-product-btn a{
+    text-decoration:none;
+    color: aliceblue;
+    margin: 8px;
+    border-radius: 8px;
+    display:inline-block;
+    background-color: #17647c;
+    padding: 8px;
+  }

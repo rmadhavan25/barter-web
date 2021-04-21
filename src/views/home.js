@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const home = () => {
+    const token = localStorage.getItem('token');
+    console.log(token);
     return ( 
         <div className="home">
             <h1>BARTER HOME</h1>

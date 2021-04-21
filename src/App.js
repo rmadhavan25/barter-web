@@ -7,7 +7,12 @@ import MyProducts from './views/myProducts';
 import Requests from './views/requestedList';
 import Queries from './views/queriesAndComplaints';
 import History from './views/transactionHistory';
+import Login from './views/login';
+import Register from './views/register'
+import NewProduct from './views/addNewProduct';
+import './stylesheets/login.css';
 import './stylesheets/home.css';
+import './stylesheets/productsList.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -18,8 +23,14 @@ function App() {
       <Navbar />
       <div className="content">
         <Switch>
+          <Route exact path="/register">
+            <Register />
+          </Route>
           <Route exact path="/">
-            <Home />
+            <Login />
+          </Route>
+          <Route exact path="/home">
+            <Home/>
           </Route>
           <Route exact path="/about">
             <About />
@@ -32,6 +43,9 @@ function App() {
           </Route>
           <Route exact path="/myProducts">
             <MyProducts />
+          </Route>
+          <Route exact path="/addNewProduct">
+            <NewProduct />
           </Route>
           <Route exact path="/requestedList">
             <Requests />
